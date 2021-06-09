@@ -2,6 +2,9 @@
   "compilerOptions": {
     "rootDir": "./ts",
     "outDir": "./js",
-    "module": "CommonJS"
+    "module": "CommonJS",
+    "inlineSourceMap": true,
+    "moduleResolution": "node",
+    "noEmitOnError": true
   }
 }
