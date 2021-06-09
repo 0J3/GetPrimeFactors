@@ -1,0 +1,13 @@
+{
+  "name": "@norathefurry/getprimefactors",
+  "version": "1.0.0",
+  "description": "Get the prime factors of the input number",
+  "main": "js/index.js",
+  "repository": "https://github.com/0J3/GetPrimeFactors.git",
+  "author": "0J3 <0J3@wafflepowered.com>",
+  "license": "AGPL-3.0-or-later",
+  "private": false,
+  "dependencies": {
+    "@norathefurry/unarray": "^1.0.0"
+  }
+}
