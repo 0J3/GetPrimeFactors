@@ -1,7 +1,7 @@
 import unArray from '@norathefurry/unarray';
 import isPrime from './isPrime';
 
-const getPrimeFactors = a => {
+const getPrimeFactors = (a: number) => {
   const v = [];
   for (let i = 1; i < a + 10; i++) {
     if (a % i == 0 && i != 1) {
@@ -13,9 +13,9 @@ const getPrimeFactors = a => {
     v.forEach(b => {
       if (i * b == a) {
         const t = [];
-        const l = i => {
+        const l = (i: number) => {
           if (isPrime(i)) t.push(i);
-          else getPrimeFactors(i).forEach(a => t.push(a));
+          else getPrimeFactors(i).forEach((a: number) => t.push(a));
         };
         l(i);
         l(b);
